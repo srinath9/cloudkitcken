@@ -6,6 +6,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -39,7 +43,7 @@ b {
     <a href="#home" class="w3-bar-item w3-button w3-wide">KITCHEN ON CLOUD</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <!-- <a href="#about" class="w3-bar-item w3-button">ABOUT</a> -->
       <a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-bar-item w3-button w3-amber w3-hover-black">LAUNCH</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -139,7 +143,7 @@ b {
   <div class="w3-row-padding">
     <div class="w3-col m6" style="padding: 0px 16px;">
       <h3 class="w3-wide">WHY US?</h3>
-      <p class="w3-large">Reach out to customers’ swiftly & provide your experience just a fraction of cost</p>
+      <p class="w3-large">Reach out to customers’ swiftly & provide your experience at just a fraction of cost</p>
       <ul class="w3-ul" style="width: 90%;">
         <li>Remove upfront real estate & infrastructure costs</li>
         <li>Hassle free infrastructure, vendor & aggregator management</li>
@@ -174,8 +178,8 @@ b {
 <!-- Client Section -->
 <div class="w3-container w3-white" style="padding:64px 16px" id="contact">
     <h3 class="w3-center">BRANDS WITH US</h3>
-    <div class="w3-row-padding w3-padding-64">
-      <div class="w3-half w3-center w3-row-padding">
+    <div class="w3-row-padding w3-padding-32">
+      <div class="w3-half w3-center w3-row-padding w3-padding-16">
         <img class="w3-half" src="images/istah-logo.jpg" style="max-width: 100%;">
         <ul class="w3-ul w3-half">
           <li>Istah - Sizzling Shawarmas</li>
@@ -185,8 +189,8 @@ b {
           <li>Since 2017</li>
         </ul>
       </div>
-      <div class="w3-half w3-center w3-row-padding">
-        <img class="w3-half" src="images/dabao.jpg" style="max-width: 100%;">
+      <div class="w3-half w3-center w3-row-padding w3-padding-16">
+        <img class="w3-half" src="images/dabao-logo.jpg" style="max-width: 100%;">
         <ul class="w3-ul w3-half">
           <li>DaBao</li>
           <li>Cloud Kitchen</li>
@@ -198,8 +202,29 @@ b {
     </div>
   </div>
 
+  <!-- Maps Section -->
+  <div class="w3-container w3-dark-gray" style="padding:64px 16px" id="contact">
+    <h3 class="w3-center">WHERE ARE WE LOCATED?</h3>
+    <div class="w3-row-padding w3-padding-64">
+      <div class="w3-half w3-center">
+        <p class="w3-large">We currently have 6 kitchen spaces for rent across Hyderabad</p>
+        <ul class="w3-ul">
+          <li>Kondapur</li>
+          <li>Gachibowli</li>
+          <li>Madhapur</li>
+          <li>Shaikpet</li>          
+          <li>Yousufguda</li>          
+          <li>Narayanguda</li>
+        </ul>
+      </div>
+      <div class="w3-half w3-center">
+        <div class="w3-round-large w3-card" id="mymap" style="height:500px; max-width: 500px; z-index: 0; margin-right: auto; margin-left: auto;"></div>
+      </div>
+    </div>
+  </div>
+
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:64px 16px" id="contact">
+<div class="w3-container w3-white" style="padding:64px 16px" id="contact">
   <h3 class="w3-center">CONTACT US</h3>
   <p class="w3-center w3-large">Interested in launching your own restaurant or expanding your business? Let's get in touch.</p>
   <p class="w3-center"><a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-button w3-amber w3-hover-black w3-padding-large w3-large w3-margin-top">LAUNCH NOW</a></p>
@@ -222,6 +247,7 @@ b {
       </a>
       <p>912 114 4009</p>
     </div>
+    
     <!-- <div class="w3-quarter">
       <a href="mailto:launch@kitchenoncloud.com" style="text-decoration: none;">
         <p><i class="fa fa-envelope w3-jumbo"></i></p>
@@ -234,7 +260,7 @@ b {
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p><i class="far fa-copyright"></i> 2018 Kitchen On Cloud. All Rights Reserved.</p>
+  <p><i class="far fa-copyright"></i> 2018 <a href="http://kitchenoncloud.com">Kitchen On Cloud</a>. All Rights Reserved.</p>
   <!-- <div class="w3-xlarge w3-section">
     <a class="fab fa-facebook-square w3-hover-opacity" href="javascript:void(0);" target="_blank" style="text-decoration:none;"></a>
     <a class="fab fa-instagram w3-hover-opacity" href="javascript:void(0);" target="_blank" style="text-decoration:none;"></a>
@@ -257,6 +283,36 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+
+// Initiate LeafletJS map
+function initMap() {
+  var mymap = L.map('mymap', {
+    zoomControl: false, 
+    scrollWheelZoom: false, 
+    doubleClickZoom: false}).setView([17.434214, 78.427125], 12);
+  var osmUrl = 'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png';
+  var osmAttr = '&copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors.';
+  L.tileLayer(osmUrl, {attribution: osmAttr}).addTo(mymap);
+  var markers = [
+    {pos: [17.459320, 78.388440], popup: '<b>Madhapur</b>'},
+    {pos: [17.434214, 78.427125], popup: '<b>Yousufguda</b>'},
+    {pos: [17.399076, 78.489790], popup: '<b>Narayanguda</b>'},
+    {pos: [17.410128, 78.399231], popup: '<b>Shaikpet</b>'},
+    {pos: [17.472712, 78.363929], popup: '<b>Kondapur</b>'},
+    {pos: [17.443138, 78.354615], popup: '<b>Gachibowli</b>'}
+  ];
+  markers.forEach(function (obj) {
+    var m = L.marker(obj.pos).addTo(mymap);
+    var p = new L.popup({
+      autoClose: false,
+      closeOnClick: false,
+      closeButton: false,
+      touchZoom: false
+    }).setContent(obj.popup).setLatLng(obj.pos);
+    m.bindPopup(p).openPopup();
+  });
+}
+initMap();
 </script>
 </body>
 </html>
