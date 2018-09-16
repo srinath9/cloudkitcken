@@ -289,7 +289,8 @@ function initMap() {
   var mymap = L.map('mymap', {
     zoomControl: false, 
     scrollWheelZoom: false, 
-    doubleClickZoom: false}).setView([17.434214, 78.427125], 12);
+    doubleClickZoom: false,
+    touchZoom: false}).setView([17.434214, 78.427125], 12);
   var osmUrl = 'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png';
   var osmAttr = '&copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors.';
   L.tileLayer(osmUrl, {attribution: osmAttr}).addTo(mymap);
@@ -306,8 +307,7 @@ function initMap() {
     var p = new L.popup({
       autoClose: false,
       closeOnClick: false,
-      closeButton: false,
-      touchZoom: false
+      closeButton: false
     }).setContent(obj.popup).setLatLng(obj.pos);
     m.bindPopup(p).openPopup();
   });
