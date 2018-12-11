@@ -1,1 +1,9 @@
 theme: jekyll-theme-merlot
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+title: Kitchen On Cloud
+description: A full stack solution to run your business online, efficiently & conveniently.
+url: https://kitchenoncloud.com
+google_site_verification: 8UYoPHYAqW44lS7VRmwuGlG8cw4S26FsHTpwYXZUDq4
+
