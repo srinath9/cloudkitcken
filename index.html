@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -217,7 +216,7 @@
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6" style="padding: 0px 16px;">
-      <h3 class="w3-wide">WHY US?</h3>
+      <h3 class="w3-wide"><b>WHY US?</b></h3>
       <p class="w3-large">Reach out to customers’ swiftly & provide your experience at just a fraction of cost</p>
       <ul class="w3-ul" style="width: 90%;">
         <li>Remove upfront real estate & infrastructure costs</li>
@@ -227,7 +226,7 @@
         <li>Market insights to grow your business seamlessly</li>
       </ul>
     </div>
-    <div class="w3-col m6" style="padding: 0px 16px; margin-top: auto; margin-bottom: auto;">
+    <!-- <div class="w3-col m6" style="padding: 0px 16px; margin-top: auto; margin-bottom: auto;">
       <p class="w3-wide"><i class="fas fa-utensils w3-margin-right"></i>Focus on Your Passion</p>
       <div class="w3-white">
         <div class="w3-container w3-vivid-green w3-center" style="width:100%">100%</div>
@@ -244,15 +243,29 @@
       <div class="w3-white">
         <div class="w3-container w3-vivid-green w3-center" style="width:90%">90%</div>
       </div>
+    </div> -->
+    <div class="w3-col m6" style="padding: 0px 16px;">
+      <h3 class="w3-wide"><b>WHERE ARE WE LOCATED?</b></h3>
+      <div>
+          <p class="w3-large">We have 6 kitchen spaces across Hyderabad</p>
+          <ul class="w3-ul">
+            <li>Kondapur</li>
+            <li>Gachibowli</li>
+            <li>Madhapur</li>
+            <li>Shaikpet</li>          
+            <li>Yousufguda</li>          
+            <li>Narayanguda</li>
+          </ul>
+        </div>
     </div>
   </div>
 </div>
 
-<!-- Maps Section -->
+<!-- Maps Section
 <div class="w3-container" style="padding:64px 16px" id="contact">
   <h3 class="w3-center">WHERE ARE WE LOCATED?</h3>
   <div class="w3-row-padding w3-padding-64">
-    <div class="w3-half w3-center">
+    <div class="w3-center">
       <p class="w3-large">We have 6 kitchen spaces across Hyderabad</p>
       <ul class="w3-ul">
         <li>Kondapur</li>
@@ -267,10 +280,10 @@
       <div class="w3-round-large" id="mymap" style="height:500px; max-width: 500px; z-index: 0; margin-right: auto; margin-left: auto;"></div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-gray" style="padding:64px 16px" id="contact">
+<div class="w3-container" style="padding:64px 16px" id="contact">
   <h3 class="w3-center">CONTACT US</h3>
   <p class="w3-center w3-large">Interested in launching your own restaurant or expanding your business? Let's get in touch.</p>
   <p class="w3-center"><a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-button w3-vivid-green w3-hover-black w3-padding-large w3-large w3-margin-top">LAUNCH NOW</a></p>
@@ -330,34 +343,34 @@ function w3_close() {
 }
 
 // Initiate LeafletJS map
-function initMap() {
-  var mymap = L.map('mymap', {
-    zoomControl: false, 
-    scrollWheelZoom: false, 
-    doubleClickZoom: false,
-    touchZoom: false}).setView([17.434214, 78.427125], 12);
-  var osmUrl = 'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png';
-  var osmAttr = '&copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors.';
-  L.tileLayer(osmUrl, {attribution: osmAttr}).addTo(mymap);
-  var markers = [
-    {pos: [17.459320, 78.388440], popup: '<b>Madhapur</b>'},
-    {pos: [17.434214, 78.427125], popup: '<b>Yousufguda</b>'},
-    {pos: [17.399076, 78.489790], popup: '<b>Narayanguda</b>'},
-    {pos: [17.410128, 78.399231], popup: '<b>Shaikpet</b>'},
-    {pos: [17.472712, 78.363929], popup: '<b>Kondapur</b>'},
-    {pos: [17.443138, 78.354615], popup: '<b>Gachibowli</b>'}
-  ];
-  markers.forEach(function (obj) {
-    var m = L.marker(obj.pos).addTo(mymap);
-    var p = new L.popup({
-      autoClose: false,
-      closeOnClick: false,
-      closeButton: false
-    }).setContent(obj.popup).setLatLng(obj.pos);
-    m.bindPopup(p).openPopup();
-  });
-}
-initMap();
+// function initMap() {
+//   var mymap = L.map('mymap', {
+//     zoomControl: false, 
+//     scrollWheelZoom: false, 
+//     doubleClickZoom: false,
+//     touchZoom: false}).setView([17.434214, 78.427125], 12);
+//   var osmUrl = 'http://a.tile.openstreetmap.org/{z}/{x}/{y}.png';
+//   var osmAttr = '&copy; <a href="http://openstreetmap.org" target="_blank">OpenStreetMap</a> contributors.';
+//   L.tileLayer(osmUrl, {attribution: osmAttr}).addTo(mymap);
+//   var markers = [
+//     {pos: [17.459320, 78.388440], popup: '<b>Madhapur</b>'},
+//     {pos: [17.434214, 78.427125], popup: '<b>Yousufguda</b>'},
+//     {pos: [17.399076, 78.489790], popup: '<b>Narayanguda</b>'},
+//     {pos: [17.410128, 78.399231], popup: '<b>Shaikpet</b>'},
+//     {pos: [17.472712, 78.363929], popup: '<b>Kondapur</b>'},
+//     {pos: [17.443138, 78.354615], popup: '<b>Gachibowli</b>'}
+//   ];
+//   markers.forEach(function (obj) {
+//     var m = L.marker(obj.pos).addTo(mymap);
+//     var p = new L.popup({
+//       autoClose: false,
+//       closeOnClick: false,
+//       closeButton: false
+//     }).setContent(obj.popup).setLatLng(obj.pos);
+//     m.bindPopup(p).openPopup();
+//   });
+// }
+// initMap();
 </script>
 </body>
 </html>
