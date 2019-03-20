@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
@@ -40,8 +42,8 @@
       line-height: 1.8;
   }
   b {
-    font-weight: 900;
-    color: #fc5830;
+    font-weight: 1200;
+    color: #1bc57e;
   }
   /* Full height image header */
   .bgimg-1 {
@@ -54,7 +56,7 @@
       padding: 16px;
   }
   ::selection {
-    background-color: #fc5830;
+    background-color: #128757;
     color:white;
   }
   </style>
@@ -63,65 +65,45 @@
 <body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">KITCHEN ON CLOUD</a>
+  <div class="w3-bar w3-vivid-green w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-black">KITCHEN ON CLOUD</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <!-- <a href="#about" class="w3-bar-item w3-button">ABOUT</a> -->
-      <a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-bar-item w3-button w3-amber w3-hover-black">LAUNCH</a>
+      <a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-bar-item w3-button w3-vivid-green w3-hover-black">LAUNCH</a>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
   </div>
 </div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large" style="display:none; right:0;" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-bar-item w3-button w3-amber w3-hover-black">LAUNCH</a>
-</nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px;">
-    <span class="w3-xlarge w3-wide w3-amber">KITCHEN ON CLOUD</span><br>
-    <span class="w3-xxlarge">We Enable & Empower</span><br>
-    <span class="w3-xlarge">Food businesses with on-demand cloud kitchen rentals & services</span>
-    <p><a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-button w3-amber w3-hover-black w3-padding-large w3-large w3-margin-top">LAUNCH NOW</a></p>
+    <span class="w3-xxlarge w3-light-gray w3-leftbar" style="padding-left: 10px; letter-spacing: 10px; border-color: #128757 !important"><b>KITCHEN ON CLOUD</b></span><br>
+    <span class="w3-xlarge w3-leftbar" style="padding-left: 10px; border-color: #128757 !important">Enable & Empower Your Food Businesses</span><br>
+    <span class="w3-large w3-leftbar" style="padding-left: 10px; border-color: #128757 !important">With On-demand Cloud Kitchen Rentals & Services</span>
+    <p><a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-button w3-vivid-green w3-hover-black w3-padding-large w3-large w3-margin-top">LAUNCH NOW</a></p>
   </div> 
 </header>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px 0px 16px" id="about">
   <h3 class="w3-center w3-wide">WE PROVIDE</h3>
-  <p class="w3-center w3-large w3-margin-left w3-margin-right">Deposit Free, Risk Free & Hassle Free plug & play kitchen spaces for rent to <b>enable</b> you to launch your cloud kitchen operations in under 10 working days. With our network of kitchen spaces across Hyderabad you can <b>expand</b> your operations with ease.</p>
+  <p class="w3-center w3-large w3-margin-left w3-margin-right">Deposit Free, Risk Free & Hassle Free plug & play kitchen spaces for rent to <b class="w3-2019-text-galaxy-blue">enable</b> you to launch your cloud kitchen operations in under 10 working days. With our network of kitchen spaces across Hyderabad you can <b>expand</b> your operations with ease.</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
+    <div class="w3-third">
       <i class="fa fa-building w3-margin-bottom w3-jumbo w3-center"></i>
       <p class="w3-large w3-wide"><b>COMPLETE KITCHENS</b></p>
-      <hr style="border:none; height:3px; width: 30%; margin-left: auto; margin-right: auto; background-color:black;">
-      <p>Fully equipped, compliant kitchen spaces with vendor, online aggregator negotiations & management.</p>
+      <p>FSSAI certified working kitchen spaces equipped with exhaust, electricity, sewage, internet and security to enable quick setup</p>
     </div>
-    <div class="w3-quarter">
+    <div class="w3-third">
       <i class="fa fa-headset w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large w3-wide"><b>CUSTOMER SUPPORT</b></p>
-      <hr style="border:none; height:3px; width: 30%; margin-left: auto; margin-right: auto; background-color:black;">
-      <p>Hassle free call handling & customer support across all online aggregators to keep your business without a pause.</p>
+      <p class="w3-large w3-wide"><b>CALL CENTER SUPPORT</b></p>
+      <p>Hassle free call center support to handle all food delivery platforms to keep your business running without a pause</p>
     </div>
-    <div class="w3-quarter">
-      <i class="fas fa-calculator w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large w3-wide"><b>ADVANCED TRACKING</b></p>
-      <hr style="border:none; height:3px; width: 30%; margin-left: auto; margin-right: auto; background-color:black;">
-      <p>End-to-end business tracking with POS, Orders, Inventory tracking using powerful applications.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-chart-line w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large w3-wide"><b>GROWTH & MARKETING</b></p>
-      <hr style="border:none; height:3px; width: 30%; margin-left: auto; margin-right: auto; background-color:black;">
-      <p>In-depth analytics, sales dashboards & latest marketing campaigns to grow your business seamlessly.</p>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large w3-wide"><b>ACCOUNT MANAGEMENT</b></p>
+      <p>On-boarding, catalogue management and business insights across all food delivery platforms to keep your business ahead of the curve</p>
     </div>
   </div>
 </div>
@@ -132,22 +114,22 @@
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <img class="w3-round-large" src="images/restaurant.jpg" style="max-width:100%">
-      <p>A <b>restaurant, chef, home cook</b> or anyone looking for commissary facilities.</p>
+      <p>A <b>restaurant, chef, home cook</b> or anyone looking for commissary facilities</p>
     </div>
     <div class="w3-quarter">
       <img class="w3-round-large" src="images/entreprenuer.jpg" style="max-width:100%">
-      <p>An <b>entrepreneur</b> following your passion of building a food venture.</p>
+      <p>An <b>entrepreneur</b> following your passion of building a food venture</p>
     </div>
     <div class="w3-quarter">
       <img class="w3-round-large" src="images/dine-in.jpg" style="max-width:100%">
-      <p>A <b>dine-in restaurant</b> looking to grow into cloud kitchen market.</p>
+      <p>A <b>dine-in restaurant</b> looking to grow into cloud kitchen market</p>
     </div>
     <div class="w3-quarter">
       <img class="w3-round-large" src="images/brand.jpg" style="max-width:100%">
-      <p>An <b>established brand</b> looking to expand their business quickly.</p>
+      <p>An <b>established brand</b> looking to expand their business quickly</p>
     </div>
   </div>
-  <p class="w3-white w3-round-large w3-large w3-center w3-padding-16">With our end to end solutions and deep analytics you can focus on delivering an experience to the customer and we will provide the rest.</p>
+  <p class="w3-white w3-round-large w3-large w3-center w3-padding-16">With our end to end solutions you can focus on delivering an experience to the customer and we will provide the rest</p>
 </div>
 
 <!-- Client Section -->
@@ -158,90 +140,117 @@
       <img src="images/istah-logo.jpg" style="max-width: 100%;">
       <ul class="w3-ul">
         <li>Istah - Sizzling Shawarmas</li>
-        <li>Cloud Kitchen</li>
-        <li>6 Outlets using Kitchen on Cloud</li>
-        <li>6 Outlets in Hyderabad</li>
         <li>Mediterranean Cuisine</li>
-        <li>Since 2017</li>
+        <li>6 outlets on Kitchen on Cloud</li>
+        <li>6 outlets in Hyderabad</li>
       </ul>
     </div>
     <div class="w3-quarter w3-center w3-padding-16">
-      <img src="images/dabao-logo.jpg" style="max-width: 100%;">
+      <img src="images/qurioseaty.jpg" style="max-width: 100%;">
       <ul class="w3-ul">
-        <li>DaBao</li>
-        <li>Cloud Kitchen</li>
-        <li>2 Outlets using Kitchen on Cloud</li>
-        <li>2 Outlets in Hyderabad</li>
-        <li>Pan Asian Cuisine</li>
-        <li>Since 2018</li>
+        <li>Qurioseaty</li>
+        <li>Indian Cuisine</li>
+        <li>3 outlets on Kitchen on Cloud</li>
+        <li>6 outlets in Hyderabad</li>
       </ul>
     </div>
     <div class="w3-quarter w3-center w3-padding-16">
-      <img src="images/masala-bandi-logo.jpg" style="max-width: 100%;">
+        <img src="images/dabao-logo.jpg" style="max-width: 100%;">
+        <ul class="w3-ul">
+          <li>DaBao</li>
+          <li>Chinese Cuisine</li>
+          <li>2 outlets on Kitchen on Cloud</li>
+          <li>2 outlets in Hyderabad</li>
+        </ul>
+      </div>
+    <div class="w3-quarter w3-center w3-padding-16">
+      <img src="images/pantastic.jpg" style="max-width: 100%;">
       <ul class="w3-ul">
-        <li>Masala Bandi</li>
-        <li>Cloud Kitchen</li>
-        <li>3 Outlets using Kitchen on Cloud</li>
-        <li>4 Outlets in Hyderabad</li>
-        <li>South Indian Cuisine</li>
-        <li>Since 2018</li>
+        <li>Pantastic</li>
+        <li>Italian Cuisine</li>
+        <li>1 outlet on Kitchen on Cloud</li>
+        <li>1 outlet in Hyderabad</li>
       </ul>
     </div>
+  </div>
+  <div class="w3-row-padding w3-padding-32">
     <div class="w3-quarter w3-center w3-padding-16">
-      <img src="images/goli-soda-logo.jpg" style="max-width: 100%;">
+        <img src="images/chairaja.jpg" style="max-width: 100%;">
+        <ul class="w3-ul">
+          <li>Chai Raja</li>
+          <li>Beverages, Snacks</li>
+          <li>1 outlet on Kitchen on Cloud</li>
+          <li>1 outlet in Hyderabad</li>
+        </ul>
+      </div>
+    <div class="w3-quarter w3-center w3-padding-16">
+      <img src="images/goli_soda.jpg" style="max-width: 100%;">
       <ul class="w3-ul">
         <li>Goli Soda</li>
-        <li>Cloud Kitchen</li>
-        <li>1 Outlet using Kitchen on Cloud</li>
-        <li>11 Outlets in Hyderabad</li>
-        <li>Fresh Beverages</li>
-        <li>Since 2018</li>
+        <li>Beverages, Healthy Food</li>
+        <li>1 outlet on Kitchen on Cloud</li>
+        <li>11 outlets in Hyderabad</li>
+      </ul>
+    </div>
+    <div class="w3-quarter w3-center w3-padding-16">
+        <img src="images/masala_bandi.jpg" style="max-width: 100%;">
+        <ul class="w3-ul">
+          <li>Masala Bandi</li>
+          <li>Street Food</li>
+          <li>3 outlets on Kitchen on Cloud</li>
+          <li>4 outlets in Hyderabad</li>
+        </ul>
+      </div>
+    <div class="w3-quarter w3-center w3-padding-16">
+      <img src="images/hop.jpg" style="max-width: 100%;">
+      <ul class="w3-ul">
+        <li>House of Pops</li>
+        <li>Ice Creams</li>
+        <li>2 outlets on Kitchen on Cloud</li>
+        <li>10 outlets in Hyderabad</li>
       </ul>
     </div>
   </div>
 </div>
 
 <!-- Why Us Section -->
-<div class="w3-container w3-dark-grey w3-padding-64">
+<div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6" style="padding: 0px 16px;">
       <h3 class="w3-wide">WHY US?</h3>
       <p class="w3-large">Reach out to customers’ swiftly & provide your experience at just a fraction of cost</p>
       <ul class="w3-ul" style="width: 90%;">
         <li>Remove upfront real estate & infrastructure costs</li>
-        <li>Hassle free infrastructure, vendor & aggregator management</li>
-        <li>One stop order management & POS solution</li>
-        <li>Plug & play into the massive Food on Demand market</li>
-        <li>Full fledged customer service to ensure continuous business</li>
-        <li>Powerful tools & dashboards to track business at your fingertips</li>
-        <li>Tailor made marketing campaigns to grow your business seamlessly</li>
+        <li>Hassle free infrastructure & account management</li>
+        <li>Plug & play into the massive on-demand food market</li>
+        <li>Full fledged call center to ensure continuous business</li>
+        <li>Market insights to grow your business seamlessly</li>
       </ul>
     </div>
     <div class="w3-col m6" style="padding: 0px 16px; margin-top: auto; margin-bottom: auto;">
       <p class="w3-wide"><i class="fas fa-utensils w3-margin-right"></i>Focus on Your Passion</p>
       <div class="w3-white">
-        <div class="w3-container w3-amber w3-center" style="width:100%">100%</div>
+        <div class="w3-container w3-vivid-green w3-center" style="width:100%">100%</div>
       </div>
       <p class="w3-wide"><i class="fas fa-money-bill-wave w3-margin-right"></i>Cost Saving</p>
       <div class="w3-white">
-        <div class="w3-container w3-amber w3-center" style="width:99%">99%</div>
+        <div class="w3-container w3-vivid-green w3-center" style="width:99%">99%</div>
       </div>
       <p class="w3-wide"><i class="fas fa-heart w3-margin-right"></i>Hassle Free</p>
       <div class="w3-white">
-        <div class="w3-container w3-amber w3-center" style="width:95%">95%</div>
+        <div class="w3-container w3-vivid-green w3-center" style="width:95%">95%</div>
       </div>
       <p class="w3-wide"><i class="fas fa-cloud w3-margin-right"></i>At Your Fingertips</p>
       <div class="w3-white">
-        <div class="w3-container w3-amber w3-center" style="width:90%">90%</div>
+        <div class="w3-container w3-vivid-green w3-center" style="width:90%">90%</div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Maps Section -->
-<div class="w3-container w3-dark-gray" style="padding:64px 16px" id="contact">
+<div class="w3-container" style="padding:64px 16px" id="contact">
   <h3 class="w3-center">WHERE ARE WE LOCATED?</h3>
-  <div class="w3-content w3-center w3-large w3-red"><p>CURRENTLY ALL OF OUR KITCHENS ARE FULLY OCCUPIED</p></div>
   <div class="w3-row-padding w3-padding-64">
     <div class="w3-half w3-center">
       <p class="w3-large">We have 6 kitchen spaces across Hyderabad</p>
@@ -255,16 +264,16 @@
       </ul>
     </div>
     <div class="w3-half w3-center">
-      <div class="w3-round-large w3-card" id="mymap" style="height:500px; max-width: 500px; z-index: 0; margin-right: auto; margin-left: auto;"></div>
+      <div class="w3-round-large" id="mymap" style="height:500px; max-width: 500px; z-index: 0; margin-right: auto; margin-left: auto;"></div>
     </div>
   </div>
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-white" style="padding:64px 16px" id="contact">
+<div class="w3-container w3-light-gray" style="padding:64px 16px" id="contact">
   <h3 class="w3-center">CONTACT US</h3>
   <p class="w3-center w3-large">Interested in launching your own restaurant or expanding your business? Let's get in touch.</p>
-  <p class="w3-center"><a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-button w3-amber w3-hover-black w3-padding-large w3-large w3-margin-top">LAUNCH NOW</a></p>
+  <p class="w3-center"><a href="https://goo.gl/forms/FKzbNs5RzC0WUAkD3" target="_blank" class="w3-button w3-vivid-green w3-hover-black w3-padding-large w3-large w3-margin-top">LAUNCH NOW</a></p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <a href="https://goo.gl/maps/ba9QBZhnHym" target="_blank" style="text-decoration: none;">
@@ -272,7 +281,7 @@
       </a>
       <p>Hyderabad, India</p>
     </div>
-    <!-- <div class="w3-quarter">
+    <div class="w3-quarter">
       <a href="tel:+919989725683" style="text-decoration: none;">
         <p><i class="fa fa-phone w3-jumbo"></i></p>
       </a>
@@ -283,7 +292,7 @@
         <p><i class="fab fa-whatsapp w3-jumbo"></i></p>
       </a>
       <p>99897 25683</p>
-    </div> -->
+    </div>
     <div class="w3-quarter">
       <a href="mailto:help@kitchenoncloud.com" style="text-decoration: none;">
         <p><i class="fa fa-envelope w3-jumbo"></i></p>
@@ -294,8 +303,8 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center w3-vivid-green w3-padding-64">
+  <a href="#home" class="w3-button w3-vivid-green w3-hover-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <p><i class="far fa-copyright"></i> 2018 <a href="http://kitchenoncloud.com">Kitchen On Cloud</a>. All Rights Reserved.</p>
   <!-- <div class="w3-xlarge w3-section">
     <a class="fab fa-facebook-square w3-hover-opacity" href="javascript:void(0);" target="_blank" style="text-decoration:none;"></a>
